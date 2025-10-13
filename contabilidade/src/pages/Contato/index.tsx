@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 interface FormData {
   nome: string;
@@ -94,7 +94,7 @@ export default function Contato() {
     const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
 
     try {
-      const response = await fetch(GOOGLE_SCRIPT_URL, {
+      await fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",
         mode: "no-cors",
         headers: {
