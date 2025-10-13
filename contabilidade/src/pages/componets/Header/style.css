@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=BBH+Sans+Bartle&family=Georama:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;1,100&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+:root {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --gold-accent: #d4af37;
+  --gold-hover: #eacd69;
+  --font-main: "Poppins", sans-serif;
+  --font-titilium: "titilium web", sans-serif;
+  --font-bbh: "BBH Sans Bartle", sans-serif;
+  --font-roboto: "roboto", sans-serif;
+}
+
+header {
+  color: var(--text-color);
+  font-family: var(--font-titilium);
+  text-transform: capitalize;
+}
+
+.home-page {
+  width: 100%;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50px;
+  border: 5px var(--gold-accent);
+}
+
+.main-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  background: -webkit-linear-gradient(
+    45deg,
+    var(--gold-accent),
+    var(--text-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  padding-bottom: 5px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--gold-accent);
+  border-bottom: 2px solid var(--gold-accent);
+}

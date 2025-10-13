@@ -1,0 +1,120 @@
+/* src/pages/FormularioPage.css */
+
+.form-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  min-height: 90vh;
+}
+
+.form-wrapper {
+  background-color: #1a1a1a;
+  padding: 3rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--gold-accent);
+  margin-bottom: 0.5rem;
+}
+
+.form-subtitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: #121212;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold-accent);
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+}
+
+.submit-button {
+  width: 100%;
+  background-color: var(--gold-accent);
+  color: var(--background-color);
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.submit-button:hover:not(:disabled) {
+  background-color: var(--gold-hover);
+}
+
+.submit-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.feedback-message {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+
+.feedback-message.success {
+  background-color: rgba(212, 175, 55, 0.2);
+  color: var(--gold-hover);
+}
+
+.feedback-message.error {
+  background-color: rgba(220, 53, 69, 0.2);
+  color: #ff8a8a;
+}
+
+/* Estilo para campos com erro */
+.input-error {
+  border-color: #dc3545 !important; /* Vermelho vibrante */
+  box-shadow: 0 0 5px rgba(220, 53, 69, 0.5) !important;
+}
+
+/* Opcional: Estilo para label de campos com erro */
+.form-group .input-error + label {
+  /* Seleciona a label imediatamente após um input com erro */
+  color: #dc3545 !important; /* Deixa o texto do label vermelho também */
+}
+
+/* Opcional: Se quiser que o foco também mostre a borda vermelha se já houver erro */
+.form-group input.input-error:focus,
+.form-group textarea.input-error:focus {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 8px rgba(220, 53, 69, 0.7) !important;
+}
