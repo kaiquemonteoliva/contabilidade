@@ -16,7 +16,7 @@ interface FormErrors {
   mensagem?: boolean;
 }
 
-export default function Contato() {
+export default function Contact() {
   const [formData, setFormData] = useState<FormData>({
     nome: "",
     email: "",

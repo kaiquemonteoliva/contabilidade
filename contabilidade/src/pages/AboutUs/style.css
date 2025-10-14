@@ -15,63 +15,8 @@ body {
   box-sizing: border-box;
 }
 
-.home-page {
-  width: 100%;
-}
-
-/*Estilo da Seção Hero */
-.hero-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 80vh;
-  padding: 0 2rem;
-}
-
-.hero-content {
-  max-width: 800px;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  background: -webkit-linear-gradient(
-    45deg,
-    var(--gold-accent),
-    var(--text-color)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 2.5rem;
-}
-
-.cta-button {
-  background-color: var(--gold-accent);
-  color: var(--background-color);
-  border: none;
-  padding: 1rem 2.5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-decoration: none;
-}
-
-.cta-button:hover {
-  background-color: var(--gold-hover);
-}
-
-/*Estilo da Seção de Serviços */
-.services-section {
+/*Estilo da Seção About Us */
+.about-us {
   padding: 4rem 5%;
   text-align: center;
 }

@@ -57,11 +57,6 @@ export default function HomePage() {
             </div>
           </section>
         </main>
-
-        {/* Rodapé */}
-        <footer className="main-footer">
-          <p>&copy; {new Date().getFullYear()} Todos os direitos reservados.</p>
-        </footer>
       </div>
     </>
   );

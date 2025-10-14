@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "./../../../assets/logo_cont.png";
 
 import "./style.css";
@@ -16,24 +16,24 @@ export default function Header() {
         <nav className="main-nav">
           <ul>
             <li>
-              <Link to="/" className="nav-link active">
+              <NavLink to="/" className="nav-link">
                 início
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/servicos" className="nav-link">
+              <NavLink to="/Services" className="nav-link">
                 serviços
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/sobre" className="nav-link">
+              <NavLink to="/AboutUs" className="nav-link">
                 sobre nós
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/Contato" className="nav-link">
+              <NavLink to="/Contact" className="nav-link">
                 contato
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </nav>
