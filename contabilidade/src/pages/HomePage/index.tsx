@@ -16,7 +16,7 @@ export default function HomePage() {
                 Deixe a burocracia conosco e foque no que realmente importa: o
                 crescimento da sua empresa.
               </p>
-              <Link to="/Contato" className="cta-button">
+              <Link to="/Contact" className="cta-button">
                 Fale com um Especialista
               </Link>
             </div>
