@@ -15,36 +15,35 @@ body {
   box-sizing: border-box;
 }
 
-/*Estilo da Seção About Us */
-.about-us {
-  padding: 4rem 5%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.section-title {
+.card-title {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   color: var(--text-color);
-}
-
-.services-grid {
   display: flex;
   justify-content: center;
-  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
-  flex-wrap: wrap;
-  gap: 2rem;
 }
 
 .service-card {
+  width: 30rem;
   background-color: rgba(255, 255, 255, 0.05);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 8px;
   border: 1px solid transparent;
   transition: transform 0.3s, border-color 0.3s;
-  flex: 1 1 280px;
-  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service-card:hover {
@@ -61,6 +60,15 @@ body {
 .service-card p {
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
+  display: flex;
+  justify-content: center;
+}
+
+.service-card li {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {

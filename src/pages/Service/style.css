@@ -1,0 +1,19 @@
+.services-title {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+}
+
+.services-container {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.services-grid {
+  display: flex;
+}

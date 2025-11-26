@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage/index.tsx";
 import AboutUs from "./pages/AboutUs/index.tsx";
 import Contact from "./pages/Contact/index.tsx";
 import Footer from "./pages/componets/Footer/index.tsx";
+import Service from "./pages/Service/index.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<HomePage />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/Service" element={<Service />} />
       </Routes>
       <Footer />
     </BrowserRouter>

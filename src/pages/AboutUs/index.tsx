@@ -1,3 +1,4 @@
+import ServiceCard from "../componets/ServiceCards";
 import "./style.css";
 // import { Link } from "react-router-dom";
 
@@ -9,8 +10,7 @@ export default function AboutUs() {
         <section className="about-us">
           <h3 className="section-title">Sobre nós</h3>
           <div className="services-grid">
-            <div className="service-card">
-              <h4>Quem somos</h4>
+            <ServiceCard title="Quem somos">
               <p>
                 Contando com profissionais com mais de 30 anos de experiência em
                 serviços contábeis e sólida vivência em instituições
@@ -35,7 +35,7 @@ export default function AboutUs() {
                 realmente importa: o sucesso do seu negócio. Entre em contato
                 para saber como podemos te ajudar a alcançar seus objetivos.
               </p>
-            </div>
+            </ServiceCard>
           </div>
         </section>
       </main>

@@ -28,14 +28,15 @@ header {
   padding: 1rem 5%;
   border-bottom: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 50px;
+  position: relative;
 }
 
 .logo {
   display: flex;
   justify-content: center;
-  width: 120px;
-  height: 120px;
-  border-radius: 100px;
+  width: 90px;
+  height: 90px;
+  border-radius: 60px;
   border: 1px solid rgba(212, 175, 55, 0.3);
   overflow: hidden;
 }
@@ -50,7 +51,7 @@ header {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   background: -webkit-linear-gradient(
     45deg,
     var(--gold-accent),
@@ -58,6 +59,10 @@ header {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
 }
 
 .main-nav ul {
