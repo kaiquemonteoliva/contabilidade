@@ -1,4 +1,4 @@
-import React, { type ReactNode } from "react";
+import { type ReactNode } from "react";
 import "./style.css";
 
 // Definimos o que o componente aceita receber
