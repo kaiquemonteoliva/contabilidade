@@ -1,10 +1,9 @@
 import { type ReactNode } from "react";
 import "./style.css";
 
-// Definimos o que o componente aceita receber
 interface ServiceCardProps {
   title: string;
-  children: ReactNode; // 'children' é o termo padrão do React para "o conteúdo de dentro"
+  children: ReactNode;
 }
 
 export default function ServiceCard({ title, children }: ServiceCardProps) {
