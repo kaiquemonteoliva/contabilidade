@@ -1,3 +1,4 @@
+
 logs
 *.log
 npm-debug.log*
@@ -11,7 +12,9 @@ dist
 dist-ssr
 *.local
 
+
 .env
+
 
 .vscode/*
 !.vscode/extensions.json
